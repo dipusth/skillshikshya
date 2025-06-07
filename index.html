@@ -1,11 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Skillshikshya</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skillshikshya</title>
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/favicon.ico" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- Tailwind CSS Library -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Custom Script -->
+    <script defer src="./assets/js/script.js"></script>
+    <!-- Tailwind Script for customization -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                700: "#157254",
+                900: "#0C4332",
+                DEFAULT: "#0D9488", // Default primary color
+              },
+              black: {
+                800: "#565656",
+                DEFAULT: "#2B2B2B", // Default primary color
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="sticky inset-x-0 top-0 z-50 mb-20order-b-2 border-slate-200">
+      <div class="container">
+        <nav class="flex items-center justify-between py-6">
+          <div class="flex lg:flex-1">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Skillshikshya</span>
+              <span>
+                <img src="./assets/images/logo.svg" alt="Skillshikshya" />
+              </span>
+            </a>
+          </div>
+          <div class="flex lg:hidden">
+            <button
+              type="button"
+              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            >
+              <span class="sr-only">Open main menu</span>
+            </button>
+          </div>
+          <div class="hidden lg:flex lg:gap-x-8 items-center">
+            <a href="#" class="text-base/6 font-semibold text-gray-900"
+              >About</a
+            >
+            <a href="#" class="text-base/6 font-semibold text-gray-900"
+              >Course</a
+            >
+            <a href="#" class="text-base/6 font-semibold text-gray-900"
+              >Success Stories</a
+            >
+            <a href="#" class="text-base/6 font-semibold text-gray-900"
+              >Compiler</a
+            >
+            <a href="#" class="text-base/6 font-semibold text-gray-900"
+              >Verify Certiicates</a
+            >
+
+            <a href="#" class="btn-gradient btn btn-shadow ml-4">
+              Access Masterclass
+            </a>
+          </div>
+        </nav>
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div class="lg:hidden" role="dialog" aria-modal="true">
+          <!-- Background backdrop, show/hide based on slide-over state. -->
+          <div class="fixed inset-0 z-50"></div>
+          <div
+            class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+          >
+            <div class="flex items-center justify-between">
+              <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">Your Company</span>
+                <img
+                  class="h-8 w-auto"
+                  src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+                  alt=""
+                />
+              </a>
+              <button
+                type="button"
+                class="-m-2.5 rounded-md p-2.5 text-gray-700"
+              >
+                <span class="sr-only">Close menu</span>
+                <svg
+                  class="size-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  data-slot="icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18 18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-gray-500/10">
+                <div class="space-y-2 py-6">
+                  <a
+                    href="#"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                    >Price</a
+                  >
+                  <a
+                    href="#"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                    >Features</a
+                  >
+                  <a
+                    href="#"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                    >How It Works</a
+                  >
+                  <a
+                    href="#"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                    >Contact Us</a
+                  >
+                </div>
+                <div class="py-6">
+                  <a
+                    href="#"
+                    class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                    >Log in</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section
+      class="hero-section"
+      style="background-image: url(./assets/images/hero-bg.png)"
+    >
+      <div class="container items-center h-full relative">
+        <div class="hero-mid mx-auto text-center">
+          <h1 class="text-1 title capitalize">
+            Where your
+            <span class="text-gradient font-black">ambition</span> meets
+            <span class="text-gradient font-black">opportunity</span>
+          </h1>
+          <p>
+            Learn the skills that define your path. Your passion is your
+            power—let’s shape it into a future you'll love.
+          </p>
+          <div class="hero-team mt-16">
+            <h6 class="text-black">
+              Guided by mentors who turn
+              <span class="text-primary font-medium">"I can't"</span> into
+              <span class="text-primary-700 font-medium"
+                >"Watch me do this!”</span
+              >
+            </h6>
+            <div class="hero-team-member circle-wrap mt-4">
+              <span class="circle circle-md"
+                ><img src="./assets/images/mentor-adarsha.png" alt=""
+              /></span>
+              <span class="circle circle-md"
+                ><img src="./assets/images/mentor-sujit.png" alt=""
+              /></span>
+              <span class="circle circle-md"
+                ><img src="./assets/images/mentor-manoj.png" alt=""
+              /></span>
+              <span class="circle circle-md"
+                ><img src="./assets/images/mentor-adarsha.png" alt=""
+              /></span>
+              <span class="circle circle-md"
+                ><img src="./assets/images/mentor-adarsha.png" alt=""
+              /></span>
+              <span class="circle circle-md">+8</span>
+            </div>
+          </div>
+        </div>
+        <div class="props props-1">
+          <img src="./assets/images/props-1.svg" alt="Props" />
+        </div>
+        <div class="props props-2">
+          <img src="./assets/images/props-2.svg" alt="Props" />
+        </div>
+        <div class="props props-3">
+          <img src="./assets/images/props-3.svg" alt="Props" />
+        </div>
+        <div class="props props-4">
+          <img src="./assets/images/props-4.svg" alt="Props" />
+        </div>
+        <div class="props props-5">
+          <img src="./assets/images/props-5.svg" alt="Props" />
+        </div>
+        <div class="props props-6">
+          <img src="./assets/images/props-6.svg" alt="Props" />
+        </div>
+      </div>
+    </section>
+    <!-- Marquee Section -->
+    <div class="list-marquee text-center bg-primary-900 items-center">
+      <ul class="list-none text-white font-bold">
+        <li>UI/UX</li>
+        <li>Graphic Design</li>
+        <li>Web Development</li>
+        <li>Quality Assurance</li>
+      </ul>
+    </div>
+  </body>
 </html>
