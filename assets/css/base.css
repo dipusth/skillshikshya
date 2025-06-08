@@ -8,14 +8,28 @@ body{
         max-width: 1216px !important;
     }
 }
+.text-has-sup{
+    position: relative;
+    sup{
+        left: auto;
+        right: -1.5625rem;
+        position: absolute;
+        top: 1.5625rem
+    }
+}
 
+section{
+    @media(max-width: 767px){
+        padding: 0 .9375rem;
+    }
+}
 .title{
     color: #1E1F24;
     font-weight: 700;
     font-family: var(--text-nohemi);
 }
-.text{
-    color: #3A3B40;
+.text-title{
+   font-family: var(--text-nohemi) !important;
 }
 
 .text-lg{
@@ -25,17 +39,24 @@ body{
     font-size: 16px !important;
 }
 .text-1{
-    font-size: 4rem;
+    font-size: 4rem !important;
     line-height: 4rem;
 }
 .text-2{
-    font-size: 32px;
+    font-size: 2.75rem !important;
+     line-height: 120%;
 }
 .text-3{
-    font-size: 21px;
+    font-size: 2rem !important;
 }
 .text-4{
-    font-size: 16px;
+    font-size: 1.75rem !important;
+}
+.text-5{
+    font-size: 1.5rem !important;
+}
+.text-6{
+    font-size: 1.125rem;
 }
 
 .btn{
@@ -126,4 +147,33 @@ body{
     justify-content: center;
     display: flex;
 
+}
+.headline{
+    p{
+        font-size: 1.5rem;
+    }
+}
+.card{
+    color: var(--white);
+    border-radius: 1.875rem;
+    padding: 1.25rem;
+    p{
+        font-size: 1.125rem;
+    }
+}
+.card-lg{
+    padding: 1.9375rem 2.375rem 1.9375rem 4.125rem
+}
+
+.card-red{
+    background-color: #F45B5B;
+}
+.card-green{
+    background-color: #5492A0;
+}
+.card-purple{
+    background-color: #6C64A8;
+}
+.card-brown{
+    background-color: #A88964;
 }
