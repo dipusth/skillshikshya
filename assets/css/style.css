@@ -321,6 +321,7 @@ header {
 /* Journey section */
 .card-imgpop-block {
   .card {
+    overflow: visible;
     img {
       max-width: 96%;
     }
