@@ -43,12 +43,14 @@
           extend: {
             colors: {
               primary: {
+                500: "#1DA077",
                 700: "#157254",
                 900: "#0C4332",
                 DEFAULT: "#0D9488", // Default primary color
               },
               secondary: {
-                500:"#C33241",
+                50: "#F9EBEC",
+                500: "#C33241",
               },
               black: {
                 800: "#565656",
@@ -172,7 +174,7 @@
     </header>
     <!-- Hero Section -->
     <section
-      class="hero-section"
+      class="hero-section props-wrapper"
       style="background-image: url(./assets/images/hero-bg.png)"
     >
       <div class="container items-center h-full relative">
@@ -235,8 +237,22 @@
       </div>
     </section>
     <!-- Marquee Section -->
-    <section class="list-marquee text-center bg-primary-900 items-center">
-      <ul class="list-none text-white font-bold">
+    <section
+      class="list-marquee list-marquee-primary text-center bg-primary-900 item-center"
+    >
+      <ul class="list-none list text-white font-bold">
+        <li>UI/UX</li>
+        <li>Graphic Design</li>
+        <li>Web Development</li>
+        <li>Quality Assurance</li>
+      </ul>
+      <ul class="list-none list text-white font-bold">
+        <li>UI/UX</li>
+        <li>Graphic Design</li>
+        <li>Web Development</li>
+        <li>Quality Assurance</li>
+      </ul>
+      <ul class="list-none list text-white font-bold">
         <li>UI/UX</li>
         <li>Graphic Design</li>
         <li>Web Development</li>
@@ -244,8 +260,7 @@
       </ul>
     </section>
     <!-- Videos Section -->
-
-    <section class="pt-[7.5rem] pb-[3.75rem]">
+    <section class="pt-[7.5rem]">
       <div class="container">
         <div class="mid-block text-center mx-auto">
           <h2 class="text-2 title">
@@ -258,10 +273,19 @@
         <div class="owl-carousel owl-theme" id="owl-carousel">
           <div class="video-wrapper h-full">
             <div class="video-item item h-full">
-              <img
-                src="./assets/images/videos/video-img-1.png"
-                alt="Video Image"
-              />
+              <div class="video-item item h-full">
+                <img
+                  src="./assets/images/videos/video-img-1.png"
+                  alt="Video Image"
+                />
+                <video muted loop preload="auto">
+                  <source
+                    src="./assets/images/videos/video-1.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
             </div>
             <span class="video-shadow"></span>
           </div>
@@ -271,6 +295,13 @@
                 src="./assets/images/videos/video-img-2.png"
                 alt="Video Image"
               />
+              <video muted loop preload="auto">
+                <source
+                  src="./assets/images/videos/video-2.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
             </div>
             <span class="video-shadow"></span>
           </div>
@@ -280,6 +311,13 @@
                 src="./assets/images/videos/video-img-3.png"
                 alt="Video Image"
               />
+              <video muted loop preload="auto">
+                <source
+                  src="./assets/images/videos/video-3.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
             </div>
             <span class="video-shadow"></span>
           </div>
@@ -289,6 +327,29 @@
                 src="./assets/images/videos/video-img-4.png"
                 alt="Video Image"
               />
+              <video muted loop preload="auto">
+                <source
+                  src="./assets/images/videos/video-4.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <span class="video-shadow"></span>
+          </div>
+          <div class="video-wrapper h-full">
+            <div class="video-item item h-full">
+              <img
+                src="./assets/images/videos/video-img-3.png"
+                alt="Video Image"
+              />
+              <video muted loop preload="auto">
+                <source
+                  src="./assets/images/videos/video-3.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
             </div>
             <span class="video-shadow"></span>
           </div>
@@ -298,6 +359,13 @@
                 src="./assets/images/videos/video-img-1.png"
                 alt="Video Image"
               />
+              <video muted loop preload="auto">
+                <source
+                  src="./assets/images/videos/video-1.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
             </div>
             <span class="video-shadow"></span>
           </div>
@@ -307,15 +375,29 @@
                 src="./assets/images/videos/video-img-2.png"
                 alt="Video Image"
               />
+              <video muted loop preload="auto">
+                <source
+                  src="./assets/images/videos/video-2.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
             </div>
             <span class="video-shadow"></span>
           </div>
           <div class="video-wrapper h-full">
             <div class="video-item item h-full">
               <img
-                src="./assets/images/videos/video-img-3.png"
+                src="./assets/images/videos/video-img-2.png"
                 alt="Video Image"
               />
+              <video muted loop preload="auto">
+                <source
+                  src="./assets/images/videos/video-2.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
             </div>
             <span class="video-shadow"></span>
           </div>
@@ -325,158 +407,700 @@
                 src="./assets/images/videos/video-img-4.png"
                 alt="Video Image"
               />
-            </div>
-            <span class="video-shadow"></span>
-          </div>
-          <div class="video-wrapper h-full">
-            <div class="video-item item h-full">
-              <img
-                src="./assets/images/videos/video-img-1.png"
-                alt="Video Image"
-              />
+              <video muted loop preload="auto">
+                <source
+                  src="./assets/images/videos/video-4.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
             </div>
             <span class="video-shadow"></span>
           </div>
         </div>
       </div>
     </section>
-    <section class="pt-[7.5rem] pb-[3.75rem]">
+    <!-- Journey Section -->
+    <section class="pt-[7.5rem]">
       <div class="container">
-        <div class="headline text-left">
+        <div class="headline text-left mb-12">
           <p>Your SkillShikshya Journey</p>
-          <h2 class="text-2 title mb-12 mt-5">
+          <h2 class="text-3 title mt-5">
             <span class="text-primary font-bold">Step</span> In.
             <span class="text-primary font-bold">Skill</span> Up.
             <span class="text-primary font-bold">Stand</span> Out. 🚀
           </h2>
-          <div class="card-imgpop-block grid grid-rows-2 grid-cols-2 gap-[1.875rem] my-15">
-
-              <div
-                class="card card-red rounded-[1.875rem] px-[2.1875rem] py-[3.625rem] text-right"
-              >
-              <div class="left">
-                <img src="./assets/images/journey-img-1.png" alt="" />
-              </div>
-                <h3 class="text-3 font-bold">Start with Clarity</h3>
-                <span class="text-5 mt-2 mb-6 font-medium block">Step into a better learning path.</span>
-                <p>
-                  Overwhelmed by too many learning options? SkillShikshya
-                  provides a clear, curated roadmap from the start. Whether
-                  you're a beginner or upskilling, we have a path tailored to
-                  your growth.
-                </p>
-                
-              </div>
-              <div
-                class="card card-green rounded-[1.875rem] px-[2.1875rem] py-[3.625rem]"
-              >
-
-                <h3 class="text-3 font-medium">Learn by Doing</h3>
-
-                <span class="text-5 mt-2 mb-6 font-medium block">Practical skills, real projects.</span>
-                <p>
-                  Theory is great, but action is better. At SkillShikshya, you
-                  learn by doing. Hands-on projects and real-world scenarios
-                  help you build, break, and create—leading to true mastery.
-                </p>
-                              <div class="right">
-                <img src="./assets/images/journey-img-2.png" alt="" />
-              </div>
-              </div>
-              <div
-                class="card card-purple rounded-[1.875rem] text-right px-[2.1875rem] py-[3.625rem]"
-              >
-              <div class="left">
-                <img src="./assets/images/journey-img-3.png" alt="" />
-              </div>
-                <h3 class="text-3 font-medium">Get Mentored & Supported</h3>
-                <span class="text-5 mt-2 mb-6 font-medium block">You're not learning alone.</span>
-                <p>
-                  Stuck or need feedback? SkillShikshya’s community of mentors
-                  and learners has your back with live support, interactive
-                  discussions, and expert insights. You’re never on your own.
-                </p>
-              </div>
-              <div class="card card-brown rounded-[1.875rem] px-[2.1875rem]
-              py-[3.625rem]">
-             
-              <h3 class="text-3 font-medium">Achieve & Showcase</h3>
-              <span class="text-5 mt-2 mb-6 font-medium block">Build your portfolio, get job-ready.</span>
-              <p>
-                Your journey ends with achievement. Each completed project
-                builds a portfolio showcasing your skills and job readiness,
-                bringing you closer to that dream job, promotion, or your own
-                venture.
-              </p>
-               <div class="right">
-                <img src="./assets/images/journey-img-4.png" alt="" />
-              </div>
+        </div>
+        <div
+          class="card-imgpop-block grid grid-rows-2 grid-cols-2 gap-[1.875rem] my-15"
+        >
+          <div
+            class="card card-red rounded-[1.875rem] px-[2.1875rem] py-[3.625rem] text-right"
+          >
+            <div class="left">
+              <img src="./assets/images/journey-img-1.png" alt="" />
             </div>
-
+            <h3 class="text-3 font-bold">Start with Clarity</h3>
+            <span class="text-5 mt-2 mb-6 font-medium block"
+              >Step into a better learning path.</span
+            >
+            <p>
+              Overwhelmed by too many learning options? SkillShikshya provides a
+              clear, curated roadmap from the start. Whether you're a beginner
+              or upskilling, we have a path tailored to your growth.
+            </p>
+          </div>
+          <div
+            class="card card-green rounded-[1.875rem] px-[2.1875rem] py-[3.625rem]"
+          >
+            <h3 class="text-3 font-bold">Learn by Doing</h3>
+            <span class="text-5 mt-2 mb-6 font-medium block"
+              >Practical skills, real projects.</span
+            >
+            <p>
+              Theory is great, but action is better. At SkillShikshya, you learn
+              by doing. Hands-on projects and real-world scenarios help you
+              build, break, and create—leading to true mastery.
+            </p>
+            <div class="right">
+              <img src="./assets/images/journey-img-2.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="card card-purple rounded-[1.875rem] text-right px-[2.1875rem] py-[3.625rem]"
+          >
+            <div class="left">
+              <img src="./assets/images/journey-img-3.png" alt="" />
+            </div>
+            <h3 class="text-3 font-bold">Get Mentored & Supported</h3>
+            <span class="text-5 mt-2 mb-6 font-medium block"
+              >You're not learning alone.</span
+            >
+            <p>
+              Stuck or need feedback? SkillShikshya’s community of mentors and
+              learners has your back with live support, interactive discussions,
+              and expert insights. You’re never on your own.
+            </p>
+          </div>
+          <div
+            class="card card-brown rounded-[1.875rem] px-[2.1875rem] py-[3.625rem]"
+          >
+            <h3 class="text-3 font-bold">Achieve &amp; Showcase</h3>
+            <span class="text-5 mt-2 mb-6 font-medium block"
+              >Build your portfolio, get job-ready.</span
+            >
+            <p>
+              Your journey ends with achievement. Each completed project builds
+              a portfolio showcasing your skills and job readiness, bringing you
+              closer to that dream job, promotion, or your own venture.
+            </p>
+            <div class="right">
+              <img src="./assets/images/journey-img-4.png" alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <!-- Courses Section -->
-    <section class="pt-[7.5rem] pb-[3.75rem]">
+    <section class="pt-[7.5rem]">
       <div class="container">
-        <div class="headline text-left">
+        <div class="headline text-left mb-12">
           <p>Explore our classes and master trending skills!</p>
-          <h2 class="text-2 title  mb-12 mt-5">
-            Dive Into <span class="text-primary font-bold">What’s Hot Right Now!</span> 🔥
+          <h2 class="text-3 title mt-5">
+            Dive Into
+            <span class="text-primary font-bold">What’s Hot Right Now!</span> 🔥
           </h2>
         </div>
         <div class="course-block flex gap-8">
           <div class="card bg-secondary-50 card-lg active">
-           <div class="text-right">
-             <a href="#">View all Courses<i class="fa-solid fa-arrow-right ml-2"></i></a>
-           </div>
-            <div class="flex justify-between mt-[3.9375rem] mb-[3.4375rem]">
-              <img src="./assets/images/props-7.svg" alt="React">
-              <img src="./assets/images/props-3.svg" alt="Like">
-              <img src="./assets/images/props-2.svg" alt="React">
-              <img src="./assets/images/props-6.svg" alt="React">
-            </div>
-            <div class="flex card-transform">
-              <span class="text-[9.375rem] font-bold text-has-sup text-title leading-none mr-10">23 <sup class="text-[4rem]">+</sup></span>
-              <div class="pt-4"><h3 class="text-3 font-bold mb-3">All Courses</h3><p>courses you're powering through right now.</p></div>
+            <div class="card-content z-1">
+              <div class="card-swap-block">
+                <div class="text-right">
+                  <a href="#"
+                    >View all Courses<i class="fa-solid fa-arrow-right ml-2"></i
+                  ></a>
+                </div>
+                <div class="flex justify-between mt-[3.9375rem] mb-[3.4375rem]">
+                  <img src="./assets/images/props-7.svg" alt="React" />
+                  <img src="./assets/images/props-3.svg" alt="Like" />
+                  <img src="./assets/images/props-2.svg" alt="React" />
+                  <img src="./assets/images/props-6.svg" alt="React" />
+                </div>
+              </div>
+              <div class="flex items-center">
+                <span
+                  class="text-[9.375rem] font-semibold text-has-sup text-title leading-none mr-10"
+                  >23 <sup class="text-[4rem]">+</sup></span
+                >
+                <div class="pt-4 card-transform pr-14">
+                  <h3 class="text-3 font-bold mb-3">All Courses</h3>
+                  <p>courses you're powering through right now.</p>
+                </div>
+              </div>
             </div>
           </div>
           <div class="card bg-secondary-50 card-lg card-shrink">
-            <div class="card-swap-block ">
-              <div class="text-right">
-                <a href="#">View all Courses<i class="fa-solid fa-arrow-right ml-2"></i></a>
+            <div class="card-content z-1">
+              <div class="card-swap-block">
+                <div class="text-right">
+                  <a href="#" class="link"
+                    >View all Courses<i class="fa-solid fa-arrow-right ml-2"></i
+                  ></a>
+                </div>
+                <div class="flex justify-between mt-[3.9375rem] mb-[3.4375rem]">
+                  <img src="./assets/images/props-7.svg" alt="React" />
+                  <img src="./assets/images/props-3.svg" alt="Like" />
+                  <img src="./assets/images/props-2.svg" alt="React" />
+                  <img src="./assets/images/props-6.svg" alt="React" />
+                </div>
               </div>
-               <div class="flex justify-between mt-[3.9375rem] mb-[3.4375rem]">
-                 <img src="./assets/images/props-7.svg" alt="React">
-                 <img src="./assets/images/props-3.svg" alt="Like">
-                 <img src="./assets/images/props-2.svg" alt="React">
-                 <img src="./assets/images/props-6.svg" alt="React">
-               </div>
-            </div>
-            <div class="flex card-transform">
-              <span class="text-[9.375rem] font-bold text-has-sup text-title leading-none mr-10">05<sup class="text-[4rem]">+</sup></span>
-              <div class="pt-4"><h3 class="text-3 font-bold mb-3">Upcoming Courses</h3><p>exciting new courses waiting to boost your skills.</p></div>
+              <div class="flex items-center">
+                <span
+                  class="text-[9.375rem] font-semibold text-has-sup text-title leading-none mr-10"
+                  >05<sup class="text-[4rem]">+</sup></span
+                >
+                <div class="pt-4 card-transform pr-14">
+                  <h3 class="text-3 font-bold mb-3">Upcoming Courses</h3>
+                  <p>exciting new courses waiting to boost your skills.</p>
+                </div>
+              </div>
             </div>
           </div>
           <div class="card bg-secondary-50 card-lg card-shrink">
-            <div class="card-swap-block">
-              <div class="text-right">
-                <a href="#">View all Courses<i class="fa-solid fa-arrow-right ml-2"></i></a>
+            <div class="card-content z-1">
+              <div class="card-swap-block">
+                <div class="text-right">
+                  <a href="#"
+                    >View all Courses<i class="fa-solid fa-arrow-right ml-2"></i
+                  ></a>
+                </div>
+                <div class="flex justify-between mt-[3.9375rem] mb-[3.4375rem]">
+                  <img src="./assets/images/props-7.svg" alt="React" />
+                  <img src="./assets/images/props-3.svg" alt="Like" />
+                  <img src="./assets/images/props-2.svg" alt="React" />
+                  <img src="./assets/images/props-6.svg" alt="React" />
+                </div>
               </div>
-               <div class="flex justify-between mt-[3.9375rem] mb-[3.4375rem]">
-                 <img src="./assets/images/props-7.svg" alt="React">
-                 <img src="./assets/images/props-3.svg" alt="Like">
-                 <img src="./assets/images/props-2.svg" alt="React">
-                 <img src="./assets/images/props-6.svg" alt="React">
-               </div>
-            </div>
-            <div class="flex card-transform">
-              <span class="text-[9.375rem] font-bold text-has-sup text-title leading-none mr-10">10<sup class="text-[4rem]">+</sup></span>
-              <div class="pt-4"><h3 class="text-3 font-bold mb-3">Ongoing Courses</h3><p>currently happening—don’t miss out on the action!</p></div>
+              <div class="flex items-center">
+                <span
+                  class="text-[9.375rem] font-semibold text-has-sup text-title leading-none mr-10"
+                  >10<sup class="text-[4rem]">+</sup></span
+                >
+                <div class="pt-4 card-transform pr-14">
+                  <h3 class="text-3 font-bold mb-3">Ongoing Courses</h3>
+                  <p>currently happening—don’t miss out on the action!</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- Brands Section -->
+    <section>
+      <div class="container">
+        <div class="headline text-center">
+          <h2 class="text-4 title mb-8 mt-5 font-semibold">
+            Our Students Get Snapped Up by
+            <span class="text-primary">Industry Giants</span>, Kicking Off
+            <span class="text-primary">Epic Careers</span>!
+          </h2>
+        </div>
+      </div>
+      <div class="list-marquee list-brands text-center item-center">
+        <ul class="list-none list text-white font-bold">
+          <li><img src="./assets/images/brand-airbnb.svg" alt="Airbnb" /></li>
+          <li>
+            <img src="./assets/images/brand-microsoft.svg" alt="Microsoft" />
+          </li>
+          <li><img src="./assets/images/brand-google.svg" alt="Google" /></li>
+          <li><img src="./assets/images/brand-clickup.svg" alt="Clickup" /></li>
+        </ul>
+        <ul class="list-none list text-white font-bold">
+          <li><img src="./assets/images/brand-airbnb.svg" alt="Airbnb" /></li>
+          <li>
+            <img src="./assets/images/brand-microsoft.svg" alt="Microsoft" />
+          </li>
+          <li><img src="./assets/images/brand-google.svg" alt="Google" /></li>
+          <li><img src="./assets/images/brand-clickup.svg" alt="Clickup" /></li>
+        </ul>
+        <ul class="list-none list text-white font-bold">
+          <li><img src="./assets/images/brand-airbnb.svg" alt="Airbnb" /></li>
+          <li>
+            <img src="./assets/images/brand-microsoft.svg" alt="Microsoft" />
+          </li>
+          <li><img src="./assets/images/brand-google.svg" alt="Google" /></li>
+          <li><img src="./assets/images/brand-clickup.svg" alt="Clickup" /></li>
+        </ul>
+        <ul class="list-none list text-white font-bold">
+          <li><img src="./assets/images/brand-airbnb.svg" alt="Airbnb" /></li>
+          <li>
+            <img src="./assets/images/brand-microsoft.svg" alt="Microsoft" />
+          </li>
+          <li><img src="./assets/images/brand-google.svg" alt="Google" /></li>
+          <li><img src="./assets/images/brand-clickup.svg" alt="Clickup" /></li>
+        </ul>
+        <ul class="list-none list text-white font-bold">
+          <li><img src="./assets/images/brand-airbnb.svg" alt="Airbnb" /></li>
+          <li>
+            <img src="./assets/images/brand-microsoft.svg" alt="Microsoft" />
+          </li>
+          <li><img src="./assets/images/brand-google.svg" alt="Google" /></li>
+          <li><img src="./assets/images/brand-clickup.svg" alt="Clickup" /></li>
+        </ul>
+      </div>
+    </section>
+    <!-- Mentors Section -->
+    <section>
+      <div class="container">
+        <div class="headline mb-12 text-left flex justify-between items-center">
+          <div>
+            <p>Skill masters, here to level you up!</p>
+            <h2 class="text-3 title mt-5">
+              Meet the
+              <span class="text-primary">Masters of Skill-Building</span>
+              <span class="inline-block">
+                <img src="./assets/images/icon-bulb.svg" alt="Bulb" />
+              </span>
+            </h2>
+          </div>
+          <a href="#" class="link">
+            Meet the Mentors<i class="fa-solid fa-arrow-right ml-2"></i
+          ></a>
+        </div>
+      </div>
+      <div class="mentors-block flex justify-center">
+        <div class="card card-mentor">
+          <div class="card-img">
+            <img
+              src="./assets/images/mentor-adarsha.png"
+              alt="Adarsha Lamichhane"
+            />
+          </div>
+          <div class="card-info block-absolute">
+            <div class="card-transform text-black">
+              <h4 class="text-5 text-black font-bold">
+                <span class="text-primary">Adarsha</span> Lamichhane
+              </h4>
+              <span>UI/UX Mentor</span>
+            </div>
+          </div>
+        </div>
+        <div class="card card-mentor">
+          <div class="card-img">
+            <img src="./assets/images/mentor-sujit.png" alt="Sujit Maharjan" />
+          </div>
+          <div class="card-info block-absolute">
+            <div class="card-transform text-black">
+              <h4 class="text-5 text-black font-bold">
+                <span class="text-primary">Sujit</span> Maharjan
+              </h4>
+              <span>Digital Marketting Mentor</span>
+            </div>
+          </div>
+        </div>
+        <div class="card card-mentor">
+          <div class="card-img">
+            <img src="./assets/images/mentor-manoj.png" alt="Manoj Kumar Das" />
+          </div>
+          <div class="card-info block-absolute">
+            <div class="card-transform text-black">
+              <h4 class="text-5 text-black font-bold">
+                <span class="text-primary">Manoj</span> Kumar Das
+              </h4>
+              <span>Python Django Menotor</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section>
+      <div class="container">
+        <div class="headline mb-12 text-left flex justify-between items-center">
+          <div>
+            <p>Curious Minds Want to Know! Let’s Dive In!</p>
+            <h2 class="text-3 title mt-5">
+              FAQs: Your
+              <span class="text-primary">Burning Questions Answered!🤔</span>
+            </h2>
+          </div>
+          <a href="#" class="link">
+            View All FAQs<i class="fa-solid fa-arrow-right ml-2"></i
+          ></a>
+        </div>
+        <div class="container">
+          <div class="grid grid-testimonials gap-8 grid-cols-3 grid-rows-3">
+            <div class="item item-1 row-span-3">
+              <img src="./assets/images/testimonial-img.png" alt="Image" />
+            </div>
+            <div class="item item-2">
+              <div class="card item-center">
+                <div class="text-left">
+                  <h3 class="text-6 text-black font-bold">
+                    1. What are the potential career opportunities after
+                    completing the course?
+                  </h3>
+                  <p>
+                    To get started, simply register yourself and select the
+                    course that aligns with your interests. If you have any
+                    questions or need guidance, we are here to assist you
+                    through counseling sessions. You can either visit our office
+                    or give us a call for furth.. <a href="#">Read More</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item item-3">
+              <div class="card item-center">
+                <div class="text-left">
+                  <h3 class="text-6 text-black font-bold">
+                    1. What are the potential career opportunities after
+                    completing the course?
+                  </h3>
+                  <p>
+                    To get started, simply register yourself and select the
+                    course that aligns with your interests. If you have any
+                    questions or need guidance, we are here to assist you
+                    through counseling sessions. You can either visit our office
+                    or give us a call for furth.. <a href="#">Read More</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item item-4">
+              <div class="card item-center">
+                <div class="text-left">
+                  <h3 class="text-6 text-black font-bold">
+                    1. What are the potential career opportunities after
+                    completing the course?
+                  </h3>
+                  <p>
+                    To get started, simply register yourself and select the
+                    course that aligns with your interests. If you have any
+                    questions or need guidance, we are here to assist you
+                    through counseling sessions. You can either visit our office
+                    or give us a call for furth.. <a href="#">Read More</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item item-5">
+              <div class="card item-center">
+                <div class="text-left">
+                  <h3 class="text-6 text-black font-bold">
+                    1. What are the potential career opportunities after
+                    completing the course?
+                  </h3>
+                  <p>
+                    To get started, simply register yourself and select the
+                    course that aligns with your interests. If you have any
+                    questions or need guidance, we are here to assist you
+                    through counseling sessions. You can either visit our office
+                    or give us a call for furth.. <a href="#">Read More</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item item-6">
+              <div class="card item-center">
+                <div class="text-left">
+                  <h3 class="text-6 text-black font-bold">
+                    1. What are the potential career opportunities after
+                    completing the course?
+                  </h3>
+                  <p>
+                    To get started, simply register yourself and select the
+                    course that aligns with your interests. If you have any
+                    questions or need guidance, we are here to assist you
+                    through counseling sessions. You can either visit our office
+                    or give us a call for furth.. <a href="#">Read More</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item item-7">
+              <div class="card item-center">
+                <div class="text-left">
+                  <h3 class="text-6 text-black font-bold">
+                    1. What are the potential career opportunities after
+                    completing the course?
+                  </h3>
+                  <p>
+                    To get started, simply register yourself and select the
+                    course that aligns with your interests. If you have any
+                    questions or need guidance, we are here to assist you
+                    through counseling sessions. You can either visit our office
+                    or give us a call for furth.. <a href="#">Read More</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="testimonials-group">
+        <div class="container item-center props-wrapper relative h-full">
+          <div class="text-center headline">
+            <p class="block">Hear How They Level Up Their Game</p>
+            <h2 class="text-3 font-bold py-5">
+              Skill<span class="text-primary px-2">Masters</span>Unite!🤝
+            </h2>
+            <a href="#" class="link"
+              >View all Testimonials<i class="fa-solid fa-arrow-right ml-2"></i
+            ></a>
+          </div>
+          <div class="props props-1">
+            <img
+              src="./assets/images/testimonials/props/props-1.png"
+              alt="Props"
+            />
+          </div>
+          <div class="props props-2">
+            <img
+              src="./assets/images/testimonials/props/props-2.png"
+              alt="Props"
+            />
+          </div>
+          <div class="props props-3">
+            <img
+              src="./assets/images/testimonials/props/props-3.gif"
+              alt="Props"
+            />
+          </div>
+          <div class="props props-4">
+            <img
+              src="./assets/images/testimonials/props/props-4.png"
+              alt="Props"
+            />
+          </div>
+          <div class="props props-5">
+            <img
+              src="./assets/images/testimonials/props/props-5.gif"
+              alt="Props"
+            />
+          </div>
+          <div class="props props-6">
+            <img
+              src="./assets/images/testimonials/props/props-6.png"
+              alt="Props"
+            />
+          </div>
+          <div class="props props-7">
+            <img
+              src="./assets/images/testimonials/props/props-7.gif"
+              alt="Props"
+            />
+          </div>
+          <div class="props props-8">
+            <img
+              src="./assets/images/testimonials/props/props-8.png"
+              alt="Props"
+            />
+          </div>
+          <div class="props props-9">
+            <img
+              src="./assets/images/testimonials/props/props-9.png"
+              alt="Props"
+            />
+          </div>
+          <div class="props props-10">
+            <img
+              src="./assets/images/testimonials/props/props-10.gif"
+              alt="Props"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Stories Section -->
+    <section>
+      <div class="container">
+        <div class="headline mb-12 text-left flex justify-between items-center">
+          <div>
+            <p>Dive into the Coolest Corner of Learning</p>
+            <h2 class="text-3 title mt-5">
+              Skill
+              <span class="text-primary">Stories</span>
+              &amp; Code
+              <span class="text-primary">Chronicles</span>
+              ✍️
+            </h2>
+          </div>
+          <a href="#" class="link">
+            View All Blogs<i class="fa-solid fa-arrow-right ml-2"></i
+          ></a>
+        </div>
+        <div class="grid card-stories gap-8 grid-cols-2 grid-rows-2">
+          <div class="card p-0 row-span-2">
+            <img class="bg-img" src="./assets/images/story-1.png" alt="" />
+            <div class="card-overlay overlay flex p-10 items-end">
+              <div class="card-info">
+                <span class="tag bg-primary-500 uppercase">Coding</span>
+                <h2 class="py-4 text-3 font-bold">
+                  Coding for Beginners: Turn Your Ideas into Reality
+                </h2>
+                <div class="flex gap-2 items-center">
+                  <span class="user circle circle-sm rounded-full"
+                    ><img src="./assets/images/user.png" alt="" />
+                  </span>
+                  <span>By Yunika Shakya</span>
+                  <span>|</span>
+                  <span><i class="fa-regular fa-clock"></i></span>
+                  <span>12 May 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card p-0">
+            <img class="bg-img" src="./assets/images/story-2.png" alt="" />
+            <div class="card-overlay overlay flex p-10 items-end">
+              <div class="card-info">
+                <span class="tag bg-primary-500 uppercase">UI/UX</span>
+                <h2 class="py-4 text-3 font-bold">
+                  Coding for Beginners: Turn Your Ideas into Reality
+                </h2>
+                <div class="flex gap-2 items-center">
+                  <span class="user circle circle-sm rounded-full"
+                    ><img src="./assets/images/user.png" alt="" />
+                  </span>
+                  <span>By Yunika Shakya</span>
+                  <span>|</span>
+                  <span><i class="fa-regular fa-clock"></i></span>
+                  <span>12 May 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card p-0">
+            <img class="bg-img" src="./assets/images/story-3.png" alt="" />
+            <div class="card-overlay overlay flex p-10 items-end">
+              <div class="card-info">
+                <span class="tag bg-primary-500 uppercase">Frontend</span>
+                <h2 class="py-4 text-3 font-bold">
+                  Coding for Beginners: Turn Your Ideas into Reality
+                </h2>
+                <div class="flex gap-2 items-center">
+                  <span class="user circle circle-sm rounded-full"
+                    ><img src="./assets/images/user.png" alt="" />
+                  </span>
+                  <span>By Yunika Shakya</span>
+                  <span>|</span>
+                  <span><i class="fa-regular fa-clock"></i></span>
+                  <span>12 May 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer text-white 0 m-5">
+      <div class="footer-top text-center py-5">
+        <ul class="flex justify-center gap-8">
+          <li>
+            <h2 class="font-bold whitespace-nowrap">Ready to Level Up?</h2>
+          </li>
+          <li>
+            <span>
+              <svg
+                width="58"
+                height="98"
+                viewBox="0 0 58 98"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M46.1932 46.1676C46.1932 46.1676 51.9782 35.8935 43.1241 0C43.1241 0 46.3134 26.8028 42.061 40.0257C42.061 40.0257 31.4338 44.8679 19.274 30.225C19.274 30.225 31.4338 49.4696 46.1932 46.1639V46.1676Z"
+                  fill="#E8F6F1"
+                />
+                <path
+                  d="M53.6311 38.8463C56.0428 38.8463 58 36.8892 58 34.4775C58 32.0658 56.0428 30.1086 53.6311 30.1086C51.2194 30.1086 49.2623 32.0658 49.2623 34.4775C49.2623 36.8892 51.2194 38.8463 53.6311 38.8463Z"
+                  fill="#E8F6F1"
+                />
+                <path
+                  d="M3.56798 76.1558C3.56798 76.1558 23.5226 79.5818 38.6351 63.8757C30.3708 76.0356 17.7376 90.0887 0.615356 98C0.615356 98 46.3097 83.7139 50.9152 41.7949C50.9152 41.7949 39.9348 66.9448 3.56798 76.1558Z"
+                  fill="#E8F6F1"
+                />
+              </svg>
+            </span>
+          </li>
+          <li>
+            <h2 class="font-bold whitespace-nowrap">Ready to Level Up?</h2>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-container">
+        <div class="flex justify-between py-11 pb-13">
+          <div class="footer-info flex flex-col mr-7 gap-8">
+            <span>
+              <img src="./assets/images/logo-footer.svg" alt="SkillShikshya" />
+            </span>
+            <p>
+              Skill Shikshya, an innovative online learning site, is dedicated
+              to offering skills that truly matter in today's fast-paced world.
+            </p>
+            <ul>
+              <li><strong>Call Us:</strong>+977 986-8730959</li>
+              <li>Sankhamul, Baneshwor</li>
+              <li>admin@skillshikshya.com</li>
+            </ul>
+          </div>
+          <div class="quick-links flex justify-between">
+            <div>
+              <h5 class="text-6 font-bold pb-5">Company</h5>
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Masterclass</a></li>
+                <li><a href="#">Success Stories</a></li>
+                <li><a href="#">Verify Cetificate</a></li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="text-6 font-bold pb-5">Additional Links</h5>
+              <ul>
+                <li><a href="#">Code Complier</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Forms</a></li>
+                <li><a href="#">FQQs</a></li>
+                <li><a href="#">Testimonial</a></li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="text-6 font-bold pb-5">Social Media</h5>
+              <ul class="flex justify-between social-link">
+                <li class="item-center">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li class="item-center">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li class="item-center">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="item-center">
+                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+                <li class="item-center">
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-between">
+          <p>Copyright © 2024 Skillshikshya. All rights reserved. Made with ❤️️ By: Vrit Tech</p>
+          <ul class="flex">
+            <li><a href="#">Privay Policy</a></li>
+            <li><a href="#">Terms &amp; Condition</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
