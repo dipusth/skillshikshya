@@ -97,6 +97,7 @@ header {
   .hero-team-member {
     .icon-tooltip {
       position: relative;
+      cursor: pointer;
       &:not(:first-child) {
         margin-left: -0.9375rem;
       }
