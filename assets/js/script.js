@@ -39,6 +39,11 @@ videos.forEach(video => {
   })
 })
 
+    const currentDate = new Date();
+    const localeString = currentDate.toLocaleString();
+    const currentYear = currentDate.getFullYear()
+    console.log(currentYear);
+
 // owl-carousel
 
     $('.owl-carousel').owlCarousel({
