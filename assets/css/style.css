@@ -59,7 +59,7 @@ header {
 .dropdown {
   &:hover {
     .dropdown-menu {
-      font-size: .875rem;
+      font-size: 0.875rem;
       display: block;
       right: 0;
       background-color: white;
@@ -67,20 +67,20 @@ header {
       border-radius: 0.5rem;
       padding: 0.625rem;
       box-shadow: 0px 2px 6px 0px rgba(16, 24, 40, 0.06);
-    li{
-       border-bottom: 1px solid transparent;
-      &:hover{
-        border-bottom: 1px solid #f7f7f7;
-        font-weight: bold;
+      li {
+        border-bottom: 1px solid transparent;
+        &:hover {
+          border-bottom: 1px solid #f7f7f7;
+          font-weight: bold;
+        }
       }
     }
-    }
   }
-  .dropdown-menu{
-    li{
-      padding: .625rem;
+  .dropdown-menu {
+    li {
+      padding: 0.625rem;
     }
-    .icon{
+    .icon {
       width: 24px;
     }
   }
@@ -93,12 +93,55 @@ header {
   padding-top: 5rem;
   @media (min-width: 768px) {
     height: 500px;
-
+  }
+  .hero-team-member {
+    .icon-tooltip {
+      position: relative;
+      &:not(:first-child) {
+        margin-left: -0.9375rem;
+      }
+      &:hover {
+        .circle {
+          z-index: 1;
+          position: relative;
+        }
+        .card-tooltip {
+          top: -97px;
+          opacity: 1;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+          border-radius: 8px;
+          padding: 10px;
+          min-width: 224px;
+          left: -3rem;
+        }
+      }
+    }
+    .card-tooltip {
+      /* display: none; */
+      position: absolute;
+      background-color: white;
+      top: -10px;
+      opacity: 0;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -21px;
+        transform: translate(-50%, -50%);
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #fff;
+        left: 50%;
+      }
+    }
   }
 
+  .card-tooltip {
+  }
   @media (min-width: 992px) {
     height: 676px;
-      padding-top: 8.4375rem;
+    padding-top: 8.4375rem;
   }
 }
 
@@ -342,8 +385,8 @@ header {
     img {
       max-width: 96%;
       @media (max-width: 991px) {
-           width: 60%;
-        }
+        width: 60%;
+      }
     }
 
     .left,
@@ -351,22 +394,21 @@ header {
       position: absolute;
       left: 1.375rem;
       top: 4.25rem;
-      animation: floating 9s linear infinite
+      animation: floating 9s linear infinite;
     }
 
     .right {
       right: 0;
       left: auto;
       @media (max-width: 991px) {
-           right: -4rem !important;
-           bottom: -2rem !important;
-        }
+        right: -4rem !important;
+        bottom: -2rem !important;
+      }
     }
-    .left
-     {
+    .left {
       @media (max-width: 991px) {
-           left: 6rem !important;
-        }
+        left: 6rem !important;
+      }
     }
 
     @media (min-width: 1440px) {
@@ -396,8 +438,8 @@ header {
       left: 1.25rem;
       top: auto;
       @media (max-width: 991px) {
-           bottom: 0 !important;
-        }
+        bottom: 0 !important;
+      }
     }
 
     p {
@@ -494,8 +536,8 @@ header {
 }
 
 /* mentor section */
-.mentors-block{
-  @media (max-width:1023px){
+.mentors-block {
+  @media (max-width: 1023px) {
     max-width: 60%;
     margin: 0 auto 0 30%;
   }
@@ -503,18 +545,18 @@ header {
 .card-mentor {
   padding: 0;
 
-  &:not(:last-child){
+  &:not(:last-child) {
     margin-bottom: 30px;
   }
 
-  @media (min-width:1024px){
-     padding: 0 32px;
-     padding-right: 0;
-     card{
-      &:not(:last-child){
+  @media (min-width: 1024px) {
+    padding: 0 32px;
+    padding-right: 0;
+    card {
+      &:not(:last-child) {
         margin-bottom: 0;
       }
-     }
+    }
   }
   &:first-child {
     padding-left: 0;
@@ -535,10 +577,10 @@ header {
       box-shadow: 0 10px 65px rgba(0, 0, 0, 0.3);
       transform: rotate(10deg) scale(0.9);
       animation: tilt 1s linear;
-      @media (max-width:1023px){
+      @media (max-width: 1023px) {
         left: 80px;
-      top: 30px;
-        animation: tilt-m .6s linear;
+        top: 30px;
+        animation: tilt-m 0.6s linear;
       }
     }
   }
@@ -563,10 +605,10 @@ header {
     overflow: hidden;
     transition: all 1s linear;
     animation: tilt-reverse 1s linear;
-   @media (max-width:1023px){
+    @media (max-width: 1023px) {
       left: 0;
-       width: 65%;
-        animation: tilt-reverse-m 0.6s linear;
+      width: 65%;
+      animation: tilt-reverse-m 0.6s linear;
     }
   }
 }
@@ -644,11 +686,11 @@ header {
   }
   .card {
     padding: 0;
-    &:not(:last-child){
+    &:not(:last-child) {
       margin-bottom: 1.875rem;
-        @media (min-width: 768px) {
-          margin-bottom: 0;
-        }
+      @media (min-width: 768px) {
+        margin-bottom: 0;
+      }
     }
   }
   .card-info {
@@ -676,13 +718,13 @@ footer {
   h2 {
     font-size: 5.125rem;
   }
-  a{
-    &:hover{
+  a {
+    &:hover {
       text-decoration: underline;
     }
   }
   @media (min-width: 1199px) {
-      background-size: 120%;
+    background-size: 120%;
   }
 }
 
@@ -838,7 +880,7 @@ footer {
   }
 }
 
-@keyframes tilt-reverse-m{
+@keyframes tilt-reverse-m {
   0% {
     transition: all 0.5 linear;
     top: 30px;
