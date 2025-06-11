@@ -25,9 +25,6 @@ videos.forEach(video => {
         merge:true,
         loop:true,
         margin:32,
-        video:true,
-        lazyLoad:true,
-        autoplay:true,
         center:true,
         autoplayHoverPause:true,
         responsive:{
