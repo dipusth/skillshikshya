@@ -1,25 +1,5 @@
-// const marqueeListWrapper = document.querySelectorAll('.list-marquee'); 
-// marqueeListWrapper.forEach(parent => {
-//     const childToClone = parent.querySelector('.list');
-//     if(childToClone){
-//         console.log('yes')
-//         for (let i = 0; i < 2; i++) {
-//             const clonedChild = childToClone.cloneNode(true)
-            
-//             parent.appendChild(clonedChild)
-//         }
-//     }
-// })
-
-// let marqueeList = marqueeListWrapper.querySelector('.list');
-
-// for (let i = 0; i < 2; i++) {
-//   let clonedList = marqueeList.cloneNode(true); // deep clone with true
-//   marqueeListWrapper.appendChild(clonedList);   // append as sibling
-// }
-
+// Video Section
 const videos = document.querySelectorAll("video")
-
 videos.forEach(video => {
   video.addEventListener("mouseover", function () {
     console.log('playing video')
@@ -39,13 +19,7 @@ videos.forEach(video => {
   })
 })
 
-    const currentDate = new Date();
-    const localeString = currentDate.toLocaleString();
-    const currentYear = currentDate.getFullYear()
-    console.log(currentYear);
-
 // owl-carousel
-
     $('.owl-carousel').owlCarousel({
         items:1,
         merge:true,
