@@ -879,6 +879,8 @@ footer {
   min-width: 17.8125rem;
   display: inline-block;
   vertical-align: middle;
+  margin-left: .125rem;
+  text-align: left;
 }
 
 .slide1,
