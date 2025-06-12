@@ -101,7 +101,10 @@ ul{
 }
 
 .text-5 {
-  font-size: 1.5rem !important;
+  font-size: 1.125rem !important;
+  @media (min-width: 992px){
+    font-size: 1.5rem !important;
+  }
 }
 
 .text-6 {

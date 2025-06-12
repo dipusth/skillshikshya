@@ -585,7 +585,12 @@ header {
 }
 .card-mentor {
   padding: 0;
-  padding-bottom: 2.5rem;
+  &:not(:last-child){
+    padding-bottom: 2.5rem;
+    @media (max-width: 576px){
+      padding-bottom: 1.25rem;
+    }
+  }
 
   &:not(:last-child) {
     margin-bottom: 30px;
