@@ -588,16 +588,15 @@ header {
 }
 .card-mentor {
   padding: 0;
+  cursor: pointer;
   &:not(:last-child){
     padding-bottom: 2.5rem;
     @media (max-width: 576px){
       padding-bottom: 1.25rem;
+       margin-bottom: 30px;
     }
   }
 
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
 
   @media (min-width: 1024px) {
     padding: 0 32px;

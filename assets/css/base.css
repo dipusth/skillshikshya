@@ -27,6 +27,11 @@ body {
   }
 }
 
+.logo{
+  &:focus-visible, &:focus{
+    outline: none;
+  }
+}
 section {
   padding: 2.5rem 0;
   @media (min-width: 992px) {
