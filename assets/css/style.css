@@ -318,6 +318,9 @@ header {
 
     .video-wrapper {
       padding-bottom: 0.4375rem;
+      @media (max-width: 767px){
+        padding: 0 .9375rem;
+      }
     }
 
     .video-item,

@@ -78,9 +78,12 @@ ul{
   }
 }
 .text-1 {
-  font-size: 4rem !important;
+  font-size: 3rem !important;
   font-weight: 600;
   line-height: 4.5rem;
+  @media (min-width: 992px) {
+    font-size: 4rem !important;
+  }
 }
 
 .text-2 {
@@ -91,13 +94,16 @@ ul{
 .text-3 {
   font-size: 1.5rem !important;
   line-height: normal;
-   @media (min-width: 1199px) {
+   @media (min-width: 992px) {
     font-size: 2rem !important;
   }
 }
 
 .text-4 {
-  font-size: 1.75rem !important;
+  font-size: 1.25rem !important;
+  @media (min-width: 992px) {
+    font-size: 1.75rem !important;
+  }
 }
 
 .text-5 {
