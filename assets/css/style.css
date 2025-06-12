@@ -638,7 +638,7 @@ header {
     span {
       font-weight: 500;
     }
-      @media (min-width: 1024px) {
+      @media (max-width: 576px) {
         position: static;
         transform: none;
       }
