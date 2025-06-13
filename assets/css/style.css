@@ -528,6 +528,7 @@ header {
 .card-shrink {
   width: 100%;
   padding: 1.5rem 2.1875rem;
+
   @media (min-width: 1024px) {
     width: 17.5rem;
     height: 28.8125rem;
@@ -536,6 +537,7 @@ header {
   .card-swap-block {
     @media (min-width: 1024px) {
       display: none;
+      transform: translateX(16.875rem);
     }
   }
 
@@ -545,6 +547,7 @@ header {
       position: absolute;
       top: 2.5rem;
       left: 0;
+      padding-right: 3.125rem;
     }
   }
 }
@@ -552,6 +555,7 @@ header {
 .card-swap-block,
 .card-transform {
   position: relative;
+  transition: all 1s ease-in-out;
 }
 
 .course-block {
@@ -563,6 +567,7 @@ header {
     max-width: 100%;
   }
   .card {
+    flex: 1;
     color: var(--secondary-500);
     background-color: var(--secondary-50);
     &.active,
@@ -571,10 +576,17 @@ header {
       background-color: #c33241;
       cursor: pointer;
     }
-    &:first-child {
+
       @media (min-width: 1024px) {
-        background-color: #c33241;
-        color: var(--secondary-50);
+        /* background-color: #c33241; */
+        /* color: var(--secondary-50); */
+        height: 28.8125rem;
+      }
+
+    &.active{
+      flex: 2;
+      .card-transform{
+        transform: none;
       }
     }
     &:not(:last-child) {
@@ -790,7 +802,7 @@ header {
         right: 12.5rem;
       }
       .props-10 {
-        top: -4.375rem;
+        top: -3.375rem;
       }
 
     }

@@ -52,3 +52,21 @@ const menu = document.querySelector('#menu');
 //   console.log('menu clicked')
 //   menu.classList.toggle('hidden');
 // });
+
+//courses section
+const courseBlock = document.querySelector('.course-block');
+const cards = courseBlock.querySelectorAll('.card');
+cards.forEach((card)=> {
+  card.addEventListener('click', ()=> {
+    cards.forEach(c => {
+      c.classList.remove('active')
+      if(c!== card){
+          c.classList.add('card-shrink')
+      }
+    })
+    console.log('card item clicked', card)
+    card.classList.add('active')
+    card.classList.remove('card-shrink')
+
+  })
+})
