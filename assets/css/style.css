@@ -744,48 +744,99 @@ header {
 }
 .testimonials-group {
   height: 31.25rem;
+  .props-zoom{
+    .props{
+      transition: all .2s ease-in-out;
+    }
+    &:hover{
+      .props-1 {
+        top: 10px;
+        left: 12.5rem;
+      }
+      .props-2 {
+        top: 15rem;
+        left: 1.875rem;
+      }
+      .props-3 {
+        top: 22rem;
+        left: 9.375rem;
+      }
+
+      .props-4 {
+        bottom: 100px;
+        left: 340px;
+      }
+
+      .props-5 {
+        bottom: 0;
+        right: 50%;
+        left: 46%;
+      }
+      .props-6 {
+        bottom: 0;
+        top: auto;
+        left: 65%;
+      }
+      .props-7 {
+        top: 22rem;
+        right: 12.5rem;
+      }
+      .props-8 {
+        top: 15rem;
+        right: 1.875rem;
+      }
+      .props-9 {
+        top: 1.875rem;
+        right: 12.5rem;
+      }
+      .props-10 {
+        top: -4.375rem;
+      }
+
+    }
+  }
   @media (min-width: 1199px) {
     height: 43.5625rem;
   }
   .props-1 {
-    top: 10px;
-    left: 12.5rem;
+           top: 100px;
+        left: 18.5rem;
   }
   .props-2 {
     top: 15rem;
-    left: 1.875rem;
+    left: 14rem;
   }
   .props-3 {
     top: 22rem;
-    left: 9.375rem;
+    left: 18rem;
   }
 
   .props-4 {
-    bottom: 100px;
-    left: 340px;
+    bottom: 8.5rem;
+    left: 24.6875rem;
   }
 
   .props-5 {
-    bottom: 0;
+    bottom: 7.8125rem;
     right: 50%;
     left: 46%;
   }
   .props-6 {
-    bottom: 0;
+    bottom: 9.0625rem;
     top: auto;
-    left: 65%;
+    left: 60%;
   }
   .props-7 {
-    top: 22rem;
-    right: 12.5rem;
+    top: 21rem;
+    right: 18rem;
   }
   .props-8 {
-    top: 15rem;
-    right: 1.875rem;
+    top: 13rem;
+    right: 15.875rem;
   }
   .props-9 {
-    top: 1.875rem;
-    right: 12.5rem;
+    top: 4.875rem;
+    right: 25.5rem;
   }
 }
 
